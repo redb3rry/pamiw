@@ -1,0 +1,259 @@
+
+body {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 46px; /* it must be the same size as footer height */
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Sansita', sans-serif;
+}
+
+.content{
+    background-color: white;
+    box-shadow: 0 0 3px 3px rgba(160, 160, 160, 0.5);
+    border-radius: 5px;
+    padding-bottom: 4%;
+}
+
+.content > *{
+    margin: 0 10%;
+}
+
+.logo img{
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding: 30px 10px;
+    overflow: hidden;
+}
+.logo h1{
+    font-size: 30px;
+    position: relative;
+    top: 18px;
+    left: 10px;
+    overflow: hidden;
+    padding: 1px 1px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 8px 8px darkslateblue;
+}
+
+.navbar {
+    background-color: darkslateblue;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.navbar a{
+    float: none;
+    color: azure;
+    text-align: center;
+    padding: 28px 30px;
+    text-decoration: none;
+    font-size: 27px;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    background-color: azure;
+    color: darkslateblue;
+}
+
+.navbar a.active{
+    background-color: cornflowerblue;
+    color: azure;
+}
+
+.top{
+    margin-top: 20%;
+    padding-top: 2%;
+}
+
+.wrapper{
+    width: 100%;
+    margin-top: 5%;
+    padding: 10px;
+    text-align: justify;
+}
+.registration-instruction{
+    margin-left: 10%;
+    margin-top: 3.6%;
+    background-color: azure;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
+    flex: 1;
+    padding: 0 15px;
+}
+.registration-form{
+    text-align: left;
+    flex: 1;
+}
+
+.package-form{
+    text-align: left;
+    flex: 1;
+}
+
+.sign-up-text{
+    padding-top: 4%;
+    margin-bottom: -4%;
+}
+
+.flex-wrapper{
+    display: flex;
+    text-align: justify;
+    margin-top: 5%;
+}
+
+.flex-wrapper > div{
+    flex: 1;
+    padding: 25px 25px;
+}
+
+.message-box{
+    margin-top: 5%;
+    float: left;
+    width: 100%;
+    padding: 5px 5px;
+    background-color: lightgreen;
+    color: black;
+    display: inline-block;
+    border: 2px solid azure;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=tel], select{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+input[type=password], select{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: darkslateblue;
+}
+
+input[type=submit]:disabled{
+    background-color: darkgray;
+    cursor: not-allowed;
+}
+.required::after {
+    content: "*";
+    color: red;
+}
+
+.warning-field{
+    display: inline-block;
+    width: 200px;
+    color: red;
+    font-size: small;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: darkslateblue;
+    color: azure;
+    max-width: inherit;
+    width: 100%;
+    height: 46px;
+    font-size: 15px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.form-row {
+    margin-top: 10px;
+}
+
+table,td,th{
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+    border: 2px solid darkslateblue;
+}
+th, td{
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd){
+    background-color: azure;
+}
+
+tr:nth-child(odd):hover{
+    background-color: goldenrod;
+    color: azure;
+}
+tr:nth-child(even):hover{
+    background-color: cornflowerblue;
+    color: gold;
+}
+
+th{
+    background-color: darkslateblue;
+    color: azure;
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 90%;
+    }
+}

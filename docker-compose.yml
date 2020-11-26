@@ -1,0 +1,22 @@
+version: "3"
+services:
+  web-login:
+    build:
+      context: .
+      dockerfile: ./Docker/login/Dockerfile
+    ports: ["8080:8880"]
+    volumes: [./postbox:/postbox]
+    environment:
+      FLASK_ENV: development
+      LOGIN_JWT_SECRET: $LOGIN_JWT_SECRET
+  web-files:
+    build:
+      context: .
+      dockerfile: ./Docker/files/Dockerfile
+    ports: ["8081:8881"]
+    volumes: [./postbox:/postbox]
+    environment:
+      FLASK_ENV: development
+      LOGIN_JWT_SECRET: $LOGIN_JWT_SECRET
+  redis-db:
+    image: "redis:alpine"

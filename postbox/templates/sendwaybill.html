@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PostBOX</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita:ital,wght@1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="images/postboxLogo.png" alt="logo" /></a>
+            <h1>PostBOX</h1>
+        </div>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a class="active" href="/send">Send package</a>
+            <a href="/list">Package list</a>
+            <a href="/registration">Sign up</a>
+            <a href="/login">Login</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </header>
+    <div class = "content">
+        <div class = "top">
+            <h2>Send a package</h2>
+        </div>
+        <div class="flex-wrapper">
+            <form class="package-form">
+                <div class="form-row">
+                    <label for="sender-name">Sender name</label>
+                    <input id="sender-name" type="text" placeholder="Sender name" name="sender-name" required/>
+                </div>
+                <div class="form-row">
+                    <label for="sender-surname">Sender surname</label>
+                    <input id="sender-surname" type="text" placeholder="Sender surname" name="sender-surname" required/>
+                </div>
+                <div class="form-row">
+                    <label for="sender-address">Sender address</label>
+                    <input id="sender-address" type="text" placeholder="Sender address" name="sender-address" required/>
+                </div>
+                <div class="form-row">
+                    <label for="sender-phone">Sender phone</label>
+                    <input id="sender-phone" type="tel" placeholder="Sender phone" name="sender-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required/>
+                </div>
+
+                <div class="form-row">
+                    <label for="receiver-name">Receiver name</label>
+                    <input id="receiver-name" type="text" placeholder="Receiver name" name="receiver-name" required/>
+                </div>
+                <div class="form-row">
+                    <label for="receiver-surname">Receiver surname</label>
+                    <input id="receiver-surname" type="text" placeholder="Receiver surname" name="receiver-surname" required/>
+                </div>
+                <div class="form-row">
+                    <label for="receiver-address">Receiver address</label>
+                    <input id="receiver-address" type="text" placeholder="Receiver address" name="receiver-address" required/>
+                </div>
+                <div class="form-row">
+                    <label for="receiver-phone">Receiver phone</label>
+                    <input id="receiver-phone" type="tel" placeholder="Receiver phone" name="receiver-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required/>
+                </div>
+                <div class="form-row">
+                    <label for="package-photo">Package photo</label>
+                    <input id="package-photo" type="file" placeholder="package-photo" name="package-photo" required/>
+                </div>
+                <input id="button-reg-form" type="submit" value="Send package"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

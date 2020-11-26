@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>PostBOX</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita:ital,wght@1,800&display=swap" rel="stylesheet">
+    <script src="scripts/registration.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="images/postboxLogo.png" alt="logo" /></a>
+            <h1>PostBOX</h1>
+        </div>
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/send">Send package</a>
+            <a href="/list">Package list</a>
+            <a class="active" href="#">Sign up</a>
+            <a href="/login">Login</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </header>
+    <div class="content">
+    <section class = "top">
+        <h2 class="sign-up-text">Sign up</h2>
+        <div class="flex-wrapper">
+            <form id="registration-form" class="registration-form">
+                <div class = "form-row">
+                    <label for="login" class="required">Login</label>
+                    <input id="login" type="text" placeholder="Enter login" name="login" required/>
+                </div>
+
+                <div class="form-row">
+                    <label for="name" class="required">Name</label>
+                    <input id="name" type="text" placeholder="Enter name" name="name" required/>
+                </div>
+                <div class="form-row">
+                    <label for="surname" class="required">Surname</label>
+                    <input id="surname" type="text" placeholder="Enter surname" name="surname" required/>
+                </div>
+                <div class="form-row">
+                    <label for="birthdate" class="required">Birthdate</label>
+                    <input id="birthdate" type="date" placeholder="Enter birthdate" name="birthdate" required/>
+                </div>
+                <div class = "form-row">
+                    <label for="pesel" class="required">PESEL</label>
+                    <input id="pesel" type="text" placeholder="Enter pesel number" name="pesel" required/>
+                </div>
+
+                <div class = "form-row">
+                    <label for="password" class="required">Password</label>
+                    <input id="password" type="password" placeholder="Enter password" name="password" required/>
+                </div>
+
+                <div class = "form-row">
+                    <label for="second_password" class="required">Repeat password</label>
+                    <input id="second_password" type="password" placeholder="Repeat password" name="second_password" required/>
+                </div>
+                <h3>Address</h3>
+                <div class="form-row">
+                    <label for="street" class="required">Street name</label>
+                    <input id="street" type="text" placeholder="Enter street" name="street" required/>
+                </div>
+                <div class="form-row">
+                    <label for="number" class="required">House number</label>
+                    <input id="number" type="text" placeholder="Enter number" name="number" required/>
+                </div>
+                <div class="form-row">
+                    <label for="postal-code" class="required">Postal code</label>
+                    <input id="postal-code" type="text" placeholder="Enter postal code" name="postal-code" required/>
+                </div>
+                <div class="form-row">
+                    <label for="country" class="required">Country</label>
+                    <input id="country" type="text" placeholder="Enter country" name="country" required/>
+                </div>
+
+                <input id="button-reg-form" type="submit" value="Submit"/>
+
+            </form>
+
+            <div class="registration-instruction">
+                <h3>Fill out this form to sign up to our service.</h3>
+                <p>Login must be at least 5 characters long and consist only of uppercase and lowercase letters.</p>
+                <p>Pesel must be a correct pesel number.</p>
+                <p>Password must be at least 8 characters long and contain at least one of each: a special character,
+                    a number, an uppercase letter, a lowercase letter.</p>
+            </div>
+        </div>
+
+    </section>
+    </div>
+    <footer>
+        <p class="footer"> &copy; 2020 Michał Malinowski</p>
+    </footer>
+</body>
+</html>
